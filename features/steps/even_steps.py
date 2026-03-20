@@ -4,6 +4,7 @@ from src.number_checker import check_number
 
 
 # TODO: Implementáld a Given step-et
+#
 @given('the number is {number}')
 def step_given_number(context, number):
     context.number = int(number)
@@ -19,4 +20,8 @@ def step_when_check_number(context):
 # TODO: Implementáld a Then step-et
 @then('the result should be "{expected}"')
 def step_then_result(context, expected):
-    assert context.result == expected, f'Expected {expected}, but got {context.result}'
+   assert context.result == expected, f'Expected {expected}, but got {context.result}'
+
+
+
+

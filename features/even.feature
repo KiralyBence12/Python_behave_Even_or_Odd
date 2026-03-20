@@ -10,24 +10,26 @@ Feature: Páros szám ellenőrzése
 Scenario: Páros szám ellenőrzése
   Given the number is 4
   When I check the number
-  Then the result should be "even"
+  Then result should be "even"
+
 
 Scenario: Páratlan szám ellenőrzése
   Given the number is 5
   When I check the number
-  Then the result should be "odd"
+  Then result should be "odd"
 
-Scenario: Nulla ellenőrzése
+Scenario: 0 szám ellenőrzése
   Given the number is 0
   When I check the number
-  Then the result should be "even"
+  Then result should be "even"
 
-Scenario: Negatív páros szám ellenőrzése
-  Given the number is -4
+Scenario: Negativ Páros szám ellenőrzése
+  Given the number is -6
   When I check the number
-  Then the result should be "even"
+  Then result should be "even"
 
-Scenario: Negatív páratlan szám ellenőrzése
+
+Scenario: Negatív Páratlan szám ellenőrzése
   Given the number is -5
   When I check the number
-  Then the result should be "odd"
+  Then result should be "odd"
